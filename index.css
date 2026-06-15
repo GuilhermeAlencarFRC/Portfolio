@@ -1,13 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
 body {
     margin: 0;
     min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
 
-background: linear-gradient(135deg, 
-#933643 0.000%, 
-#563b5b 20.000%, 
-#2c3c7b 40.000%, 
-#163a77 60.000%, 
-#143555 80.000%, 
-#262c42 100.000%);
-
+    background:
+        radial-gradient(
+            ellipse 120% 80% at 70% 20%,
+            rgba(255, 20, 147, 0.15),
+            transparent 50%
+        ),
+        radial-gradient(
+            ellipse 100% 60% at 30% 10%,
+            rgba(0, 255, 255, 0.12),
+            transparent 60%
+        ),
+        radial-gradient(
+            ellipse 90% 70% at 50% 0%,
+            rgba(138, 43, 226, 0.18),
+            transparent 65%
+        ),
+        radial-gradient(
+            ellipse 110% 50% at 80% 30%,
+            rgba(255, 215, 0, 0.08),
+            transparent 40%
+        ),
+        #000000;
 }
+ 
+
+#titulo {
+  color: #999;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  margin-top: 4px;
+  margin-right: 850px;
+}
+
+#flip-titulo {
+  height: 50px;
+  overflow: hidden;
+}
+
+#flip-titulo > div > div {
+  color: #fff;
+  padding: 4px 12px;
+  height: top;
+  margin-bottom: 45px;
+  display: inline-block;
+}
+
+#flip-titulo div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip-titulo div:nth-child(1) div {
+  background: #f43f5e;
+}
+
+#flip-titulo div:nth-child(2) div {
+  background: #8b5cf6;
+}
+
+#flip-titulo div:nth-child(3) div {
+  background: #10b981;
+}
+
+#flip-titulo div:nth-child(4) div {
+  background: #00d4ff;
+}
+
+@keyframes show {
+  0% {
+    margin-top: -270px;
+  }
+
+  20% {
+    margin-top: -270px;
+  }
+
+  25% {
+    margin-top: -180px;
+  }
+
+  45% {
+    margin-top: -180px;
+  }
+
+  50% {margin-top: -90px;
+  }
+
+  70% {
+    margin-top: -90px;
+  }
+
+  75% {
+    margin-top: 0;
+  }
+
+  95% {
+    margin-top: 0;
+  }
+
+  100% {
+    margin-top: -270px;
+  }
+}
+
+#sobre-mim{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin: 20px;
+}
+
