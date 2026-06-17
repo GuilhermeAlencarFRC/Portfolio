@@ -52,3 +52,19 @@ body {
     left: 25px;
 }
 
+#Automação_Industrial img{
+    width: 350px;
+    height: 233px;
+
+    position: absolute;
+    top: 320px;
+    left: 390px;
+
+    object-fit: cover;
+    object-position: top;
+}
+
+#Inovação img{
+    
+}
+
